@@ -1,0 +1,124 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% This is an example of a very complete CV using the 'moderncv' package
+% and the 'timeline' package. For more information on those, please
+% access: 
+% https://www.ctan.org/tex-archive/macros/latex/contrib/moderntimeline
+% https://www.ctan.org/tex-archive/macros/latex/contrib/moderncv
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt, a4paper, sans]{moderncv}
+\moderncvstyle{classic}
+\moderncvcolor{blue} 
+\usepackage[utf8]{inputenc}
+\usepackage[scale=0.88]{geometry}    % Width of the entire CV
+\setlength{\hintscolumnwidth}{4.1cm} % Width of the timeline on your left
+\usepackage{pdfpages/pdfpages}
+\usepackage{moderntimeline/moderntimeline}
+\usepackage{xpatch/xpatch}
+\usepackage{color, graphicx}
+\tlmaxdates{2002}{2018.6}              % Beggining and start of your timeline                        
+
+\usepackage[backend=bibtex8,
+    url=false,
+    style=authoryear,
+    doi=false,
+    isbn=false,
+    maxnames=99,
+    dashed=false,
+    sorting=ydnt]{biblatex}
+
+\newcommand{\cvreferencecolumn}[2]{%
+  \cvitem[0.8em]{}{%
+    \begin{minipage}[t]{\listdoubleitemmaincolumnwidth}#1\end{minipage}%
+    \hfill%
+    \begin{minipage}[t]{\listdoubleitemmaincolumnwidth}#2\end{minipage}%
+    }%
+}
+
+\newcommand{\cvreference}[8]{%
+    \textbf{#1}\newline% Name
+    \ifthenelse{\equal{#2}{}}{}{\addresssymbol~#2\newline}%
+    \ifthenelse{\equal{#3}{}}{}{#3\newline}%
+    \ifthenelse{\equal{#4}{}}{}{#4\newline}%
+    \ifthenelse{\equal{#5}{}}{}{#5\newline}%
+    \ifthenelse{\equal{#6}{}}{}{\emailsymbol~\texttt{\href{mailto:#6}{\nolinkurl{#6}}}\newline}%
+    \ifthenelse{\equal{#7}{}}{}{\phonesymbol~#7\newline}
+    \ifthenelse{\equal{#8}{}}{}{\mobilephonesymbol~#8}}
+
+% List of journals that I may need to use in the bibtex file 
+\def\aj{AJ}
+\def\araa{ARA\&A}
+\def\apj{ApJ}
+\def\apjl{ApJ}
+\def\apjs{ApJS}
+\def\apss{Ap\&SS}
+\def\aap{A\&A}
+\def\aapr{A\&A~Rev.}
+\def\aaps{A\&AS}
+\def\mnras{MNRAS}
+\def\pasp{PASP}
+\def\pasj{PASJ}
+\def\qjras{QJRAS}
+\def\nat{Nature}
+\def\aplett{Astrophys.~Lett.}
+\def\aas{AAS}
+\def\solphys{Solar Physics}
+\def\memsai{Mem.~Soc.~Astron.~Italiana}
+
+% personal data
+\input{./content/contactInfo.tex}
+
+% center modertimeline label to the overall time line not the event
+\makeatletter
+\tikzset{
+    tl@startyear/.append style={
+        xshift=(0.5-\tl@startfraction)*\hintscolumnwidth,
+        anchor=base
+    }
+}
+\makeatother
+
+\addbibresource{publications.bib}
+\begin{document}
+
+\makecvtitle
+
+\input{./content/experience}
+\input{./content/educationLong}
+\input{./content/thesis}
+
+\section{Technical Skills}
+  \cvitemwithcomment{Programming Languages}{Python, C\texttt{++}, Matlab}{}
+  \cvitemwithcomment{Technologies}{Git, Travis, CMake, \LaTeX, Vim, Emacs}{}
+  \cvitemwithcomment{Operating Sytem}{Linux (Gentoo)}{}
+
+\section{Languages}
+  \cvitemwithcomment{Catalan}{IRL 5}{Mother tonge}
+  \cvitemwithcomment{Spanish}{IRL 5}{Mother tonge}
+  \cvitemwithcomment{English}{IRL 4-5}{}
+  \cvitemwithcomment{French}{IRL 3-4}{}
+  %\cvitemwithcomment{french}{irl 3}{despite being able to handle a variety of spoken registers, i have limited writting skills.}
+
+%\include*{./content/extraExample}
+% \input{./content/publicationsLong}
+
+\section{Awards}
+\tldatelabelcventry{2016.2}{Feb.\,2016}
+  {Best student paper award for}
+  {Rastgoo~et.\,al.~"Classification of melanoma lesions using sparse coded features and random forests"}{}{Rome}{}
+\tldatelabelcventry{2006.666}{Aug.\,2006}
+  {Member of the {ViCOROB-UDG} team honored as the winner of the 2006 {SAUC-E} \href{http://sauc-europe.org/about.html}{(Student Autonomous Underwater Challenge Europe) competition}}
+  {}{}{London}{}
+
+
+% \section{References}
+
+% \begin{cvcolumns}
+%     \cvcolumn{Paula R. T. Coelho}{Professor \\ Astronomy Dept., IAG-USP \\ São Paulo, Brazil \\ \emailsymbol pcoelho@usp.br \\ \phonesymbol +55 11 3091 2727}
+%     \cvcolumn{Rafael S. de Souza}{Post-Doctoral Researcher \\ Eötvös Loránd University \\ Budapest - Hungary \\ \emailsymbol rafael@caesar.elte.hu }
+% \end{cvcolumns}
+
+
+\clearpage
+
+\end{document}

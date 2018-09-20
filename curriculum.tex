@@ -1,0 +1,76 @@
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+% moderncv themes
+\moderncvstyle{classic}
+\moderncvcolor{blue}
+\renewcommand{\familydefault}{\sfdefault}
+\nopagenumbers{}
+
+% other packages
+\usepackage{newclude}
+\usepackage[firstyear=2002,lastyear=2017.400]{moderntimeline}
+\usepackage[backend=bibtex8,
+    url=false,
+    style=authoryear,
+    doi=false,
+    isbn=false,
+    maxnames=99,
+    dashed=false,
+    sorting=ydnt]{biblatex}
+\usepackage{modernTimelinePublications}
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\input{./content/contactInfo.tex}
+
+% center modertimeline label to the overall time line not the event
+\makeatletter
+\tikzset{
+    tl@startyear/.append style={
+        xshift=(0.5-\tl@startfraction)*\hintscolumnwidth,
+        anchor=base
+    }
+}
+\makeatother
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+
+\addbibresource{publications.bib}
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\include*{./content/experience}
+\include*{./content/educationLong}
+\include*{./content/thesis}
+
+\section{Technical Skills}
+  \cvitemwithcomment{Programming Languages}{Python, C\texttt{++}, Matlab}{}
+  \cvitemwithcomment{Technologies}{Git, Travis, CMake, \LaTeX, Vim, Emacs}{}
+  \cvitemwithcomment{Operating Sytem}{Linux (Gentoo)}{}
+
+\section{Languages}
+  \cvitemwithcomment{Catalan}{IRL 5}{Mother tonge}
+  \cvitemwithcomment{Spanish}{IRL 5}{Mother tonge}
+  \cvitemwithcomment{English}{IRL 4-5}{}
+  \cvitemwithcomment{French}{IRL 3-4}{}
+  %\cvitemwithcomment{french}{irl 3}{despite being able to handle a variety of spoken registers, i have limited writting skills.}
+
+%\include*{./content/extraExample}
+\include*{./content/publicationsLong}
+
+\section{Awards}
+\tldatelabelcventry{2016.2}{Feb.\,2016}
+  {Best student paper award for}
+  {Rastgoo~et.\,al.~"Classification of melanoma lesions using sparse coded features and random forests"}{}{Rome}{}
+\tldatelabelcventry{2006.666}{Aug.\,2006}
+  {Member of the {ViCOROB-UDG} team honored as the winner of the 2006 {SAUC-E} \href{http://sauc-europe.org/about.html}{(Student Autonomous Underwater Challenge Europe) competition}}
+  {}{}{London}{}
+
+\end{document}
+

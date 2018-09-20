@@ -1,0 +1,34 @@
+%% To enlarge the quote line
+\usepackage{etoolbox}
+\patchcmd{\recomputecvlengths}{%
+  \setlength{\quotewidth}{0.65\textwidth}%
+}{%
+  \setlength{\quotewidth}{0.9\textwidth}%
+}{}{}
+
+
+%% Personal data
+\firstname{Joan}
+\familyname{Massich}
+\title{Software Engineer, Research fellow}
+% \photo[90pt][1pt]{sik}
+% \address{c/ Nou, 60}{17100 La Bisbal d'Emporda (Spain)}
+\address{33, Parc d'Ardenay}{91120 Palaiseau (France)}
+% \mobile{+33~(0)~601~201~668}
+\phone{+33~(0)~601~201~668}
+%\fax{+3~(456)~789~012}
+
+% \email{joan.massich@u-bourgogne.fr}
+\email{mailsik@gmail.com}
+% \homepage{www.massich.cat}
+
+\social[github][www.github.com/massich/]{~massich}
+\social[linkedin][www.linkedin.com/in/massich/]{~massich}
+% \social[skype]{~~sik.van}
+% \social[twitter]{jmassich}
+\extrainfo{
+Born 15 March 1984
+}
+
+\quote{This is how I did it Anton. I never saved anything for the swim back. \href{http://www.imdb.com/title/tt0119177/?ref_=ttqt_qt_tt}{(Gattaca, 1997)}}
+
