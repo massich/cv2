@@ -257,6 +257,8 @@
       \ifthenelse{\equal{#1}{linkedin}}{\collectionadd[linkedin]{socials}{\protect\httplink[#3]{www.linkedin.com/in/#3}}}{}%
       \ifthenelse{\equal{#1}{twitter}} {\collectionadd[twitter]{socials} {\protect\httplink[#3]{www.twitter.com/#3}}}    {}%
       \ifthenelse{\equal{#1}{github}}  {\collectionadd[github]{socials}  {\protect\httplink[#3]{www.github.com/#3}}}     {}%
+      \ifthenelse{\equal{#1}{googlescholar}}{\collectionadd[googlescholar]{socials}{\protect\httpslink[#3]{www.googlescholar.com/profile/#3}}}{}% <================================================================
+      \ifthenelse{\equal{#1}{researchgate}}{\collectionadd[researchgate]{socials}{\protect\httpslink[#3]{www.researchgate.com/profile/#3}}}{}% <================================================================
     }
     {\collectionadd[#1]{socials}{\protect\httplink[#3]{#2}}}}
 
@@ -296,6 +298,8 @@
 \newcommand*{\linkedinsocialsymbol}{}
 \newcommand*{\twittersocialsymbol} {}
 \newcommand*{\githubsocialsymbol}  {}
+\newcommand*{\googlescholarsocialsymbol}  {\includegraphics[width=0.5cm]{example-image-a}~} % <===================
+\newcommand*{\researchgatesocialsymbol}  {\includegraphics[width=0.5cm]{example-image-b}~} % <===================
 
 % other
 %------

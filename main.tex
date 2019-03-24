@@ -9,6 +9,7 @@
 \documentclass[12pt, a4paper, sans]{moderncv}
 \moderncvstyle{classic}
 \moderncvcolor{blue} 
+\usepackage{fontawesome}
 \usepackage[utf8]{inputenc}
 \usepackage[scale=0.88]{geometry}    % Width of the entire CV
 \setlength{\hintscolumnwidth}{4.1cm} % Width of the timeline on your left
@@ -16,7 +17,7 @@
 \usepackage{moderntimeline/moderntimeline}
 \usepackage{xpatch/xpatch}
 \usepackage{color, graphicx}
-\tlmaxdates{2002}{2018.6}              % Beggining and start of your timeline                        
+\tlmaxdates{2002}{2019.8}              % Beggining and start of your timeline                        
 
 \usepackage[backend=bibtex8,
     url=false,
@@ -89,14 +90,15 @@
 
 \section{Technical Skills}
   \cvitemwithcomment{Programming Languages}{Python, C\texttt{++}, Matlab}{}
-  \cvitemwithcomment{Technologies}{Git, Travis, CMake, \LaTeX, Vim, Emacs}{}
-  \cvitemwithcomment{Operating Sytem}{Linux (Gentoo)}{}
+  \cvitemwithcomment{Technologies}{Git, Travis, appveyor, cirlce, CMake, \LaTeX, Vim, Emacs}{}
+  \cvitemwithcomment{Operating Sytem}{Windows, Linux (Gentoo)}{}
 
 \section{Languages}
-  \cvitemwithcomment{Catalan}{IRL 5}{Mother tonge}
-  \cvitemwithcomment{Spanish}{IRL 5}{Mother tonge}
-  \cvitemwithcomment{English}{IRL 4-5}{}
-  \cvitemwithcomment{French}{IRL 3-4}{}
+  \cvitem{}{Catalan and Spanish (mother tongue), English (fluent), and French
+      (spoken fluent and written business level)}
+  % \cvitemwithcomment{Spanish}{IRL 5}{Mother tonge}
+  % \cvitemwithcomment{English}{IRL 4-5}{}
+  % \cvitemwithcomment{French}{IRL 3-4}{}
   %\cvitemwithcomment{french}{irl 3}{despite being able to handle a variety of spoken registers, i have limited writting skills.}
 
 %\include*{./content/extraExample}

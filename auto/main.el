@@ -17,6 +17,7 @@
     "./content/thesis"
     "moderncv"
     "moderncv12"
+    "fontawesome"
     "inputenc"
     "geometry"
     "pdfpages/pdfpages"
