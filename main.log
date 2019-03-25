@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.8.21)  24 MAR 2019 22:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.8.21)  25 MAR 2019 18:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1805,32 +1805,32 @@ LaTeX Font Warning: Font shape `U/fontawesomeone/m/sl' undefined
 \makecvheadnamebox=\box60
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <12> on input line 85.
-(./content/experience.tex) (./content/educationLong.tex
-LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10.95> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 14.
- [1
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]) (./content/thesis.tex
-LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <12> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 3.
-)
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 92.
-
-(/usr/share/texmf/tex/latex/lm/t1lmtt.fd
+(./content/experience.tex
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 14.
+ (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [2]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 132.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 132.
+)
+(./content/educationLong.tex
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10.95> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 15.
+ [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]) (./content/thesis.tex
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <12> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 3.
+) [2] [3]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 137.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 137.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 132.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 132.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 137.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 137.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 725A357C3CB8F099711B02C797C0A23A;564.
+(rerunfilecheck)             Checksum: E4B68563785E03E33F6F973C462D53AB;667.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -1840,29 +1840,31 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 38315 strings out of 492982
- 706465 string characters out of 6134896
- 962099 words of memory out of 5000000
- 41318 multiletter control sequences out of 15000+600000
- 599152 words of font info for 85 fonts, out of 8000000 for 9000
+ 38337 strings out of 492982
+ 706639 string characters out of 6134896
+ 962121 words of memory out of 5000000
+ 41311 multiletter control sequences out of 15000+600000
+ 600995 words of font info for 99 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  69i,16n,68p,10379b,775s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
-ips/lm/lm-mathsy.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/fontawesome
-/fontawesomeone.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/fontaweso
-me/FontAwesome.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb></usr/sha
-re/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/
-lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmss8.pfb></usr/share/tex
-mf/fonts/type1/public/lm/lmssbo10.pfb></usr/share/texmf/fonts/type1/public/lm/l
-mssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso10.pfb></usr/share/tex
-mf/fonts/type1/public/lm/lmsso12.pfb></usr/share/texmf/fonts/type1/public/lm/lm
-sso17.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/
-fonts/type1/public/lm/lmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
-lic/marvosym/marvosym.pfb>
-Output written on main.pdf (2 pages, 258698 bytes).
+ips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share
+/texlive/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomeone.enc}</usr/share/
+texlive/texmf-dist/fonts/type1/public/fontawesome/FontAwesome.pfb></usr/share/t
+exmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lm
+ss10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/f
+onts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmss8.p
+fb></usr/share/texmf/fonts/type1/public/lm/lmssbo10.pfb></usr/share/texmf/fonts
+/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso10.p
+fb></usr/share/texmf/fonts/type1/public/lm/lmsso12.pfb></usr/share/texmf/fonts/
+type1/public/lm/lmsso17.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb>
+</usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type
+1/public/lm/lmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/marvos
+ym/marvosym.pfb>
+Output written on main.pdf (3 pages, 295780 bytes).
 PDF statistics:
- 131 PDF objects out of 1000 (max. 8388607)
- 112 compressed objects within 2 object streams
- 9 named destinations out of 1000 (max. 500000)
- 24125 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 148 PDF objects out of 1000 (max. 8388607)
+ 126 compressed objects within 2 object streams
+ 11 named destinations out of 1000 (max. 500000)
+ 24645 words of extra memory for PDF output out of 24883 (max. 10000000)
 
