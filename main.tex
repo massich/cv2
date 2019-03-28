@@ -28,8 +28,9 @@
     maxnames=99,
     maxcitenames=1,
     dashed=false,
+	giveninits=true,
     sorting=ydnt]{biblatex}
-
+\DeclareNameAlias{author}{last-first}
 \newcommand{\cvreferencecolumn}[2]{%
   \cvitem[0.8em]{}{%
     \begin{minipage}[t]{\listdoubleitemmaincolumnwidth}#1\end{minipage}%
@@ -81,6 +82,7 @@
 }
 \makeatother
 
+
 \addbibresource{publications.bib}
 \begin{document}
 
@@ -92,6 +94,7 @@
 
 \input{./content/publicationsLong}
 
+\vspace{1cm}
 \section{Technical Skills}
   \cvitemwithcomment{Languages}{Python, C\texttt{++}, Matlab, Scratch}{}
   \cvitemwithcomment{Technologies}{Git, CMake, Continuous Integration, Package distribution, \LaTeX, Vim, Emacs}{}
