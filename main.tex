@@ -16,6 +16,7 @@
 \usepackage{pdfpages/pdfpages}
 \usepackage{moderntimeline/moderntimeline}
 \usepackage{xpatch/xpatch}
+\usepackage{amsmath}
 \usepackage{color, graphicx}
 \tlmaxdates{2002}{2019.8}              % Beggining and start of your timeline                        
 
@@ -25,6 +26,7 @@
     doi=false,
     isbn=false,
     maxnames=99,
+    maxcitenames=1,
     dashed=false,
     sorting=ydnt]{biblatex}
 
@@ -88,15 +90,13 @@
 \input{./content/educationLong}
 \input{./content/thesis}
 
+\input{./content/publicationsLong}
+
 \section{Technical Skills}
   \cvitemwithcomment{Languages}{Python, C\texttt{++}, Matlab, Scratch}{}
-  \cvitemwithcomment{Technologies}{Git, Travis, appveyor, cirlce, CMake, \LaTeX, Vim, Emacs}{}
+  \cvitemwithcomment{Technologies}{Git, CMake, Continuous Integration, Package distribution, \LaTeX, Vim, Emacs}{}
   \cvitemwithcomment{Operating Sytem}{Windows, Linux (Gentoo)}{}
 
-\section{Publications}
-  \cvitem{}{A total of $28$ international publications with $280$ citations combined
-    according to google scholar and an h-factor of $10$.}
-  
 
 \section{Languages}
   \cvitem{}{Catalan and Spanish (mother tongue), English (fluent), and French
